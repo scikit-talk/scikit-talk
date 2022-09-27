@@ -1,51 +1,9 @@
-"""Main module."""
-
-# -*- coding: utf-8 -*-
-
-"""
-Preprocessor module - build dataframes from files (e.g. .eaf, .cha, .txt).
-The Preprocessor module takes transcription files as an input, and returns them in a dataframe or .csv file with a unified formatting.
-This module currently contains 3 functions. They essentially execute similar tasks for different transcription formats.
-They read in differently formatted conversational speech data, returning them in a universal format, which is then comparable, concatenatable,
-and easier to work on.
-The functions of the Preprocessor module take two arguments, an input path, and an output path, where the latter is optional.
-If an output path is given, the functions write a .csv file into it, which contain a dataframe of all the transcription files that were read in.
-If only an input file is given, the functions return a dataframe of the data.
-The data is organized into the following: begin, end, speaker, utterance, source.
-If the corpus provides timestamps, 'begin' and 'end' will contain these in a pandas.datetime format.
-"""
-
-# This code is a part of scikit-talk library: https://pypi.org/project/scikit-talk/
-# :copyright: (c) 2021 Andreas Liesenfeld <lies0002@ntu.edu.sg> and Gabor Parti <gabor.parti@connect.polyu.edu.hk>
-# :license: MIT, see LICENSE for more details.
-
-import os
-import csv
-import regex as re
-import numpy as np
-import pandas as pd
-import pylangacq
-from speach import elan
-import datetime
-
-# ----------------------------------------------------------------------
-# Preprocessor module for parsing Preprocessor module for parsing Preprocessor module for parsing
-# ----------------------------------------------------------------------
-
 def cha_to_dataframe(path_in, *path_out):
-    """
-    This function reads .cha files, transcriptions of speech that were produced in the CHAT format.
-    The function takes the files, reads and appends them one by one, line by line, and returns one dataframe.
-    The function takes two arguments: an input path (e.g. path_in) and an output path (e.g. path_out), where the latter is optional.
-    If you only give the input path (path_in), the function returns a pandas dataframe object.
-    If you give the optional output path (*path_out) as well, the function writes the dataframe into that, as a .csv file.
-    path_in should be a string, pointing to a folder where .cha files are located. Example: path_in = '/folder/'
-    *path_out should be a string, pointing to a folder where you want your dataset written. Example: path_out = '/folder/output/'
-    You have to make this output directory yourself before calling the function.
-    Overall, calling the function should look like the following:
-    preprocessor.cha_to_dataframe(path_in)
-    OR
-    preprocessor.cha_to_dataframe(path_in, path_out)
+    """This method will be used to add two numbersss
+        :param str path_in: The first number
+        :param str path_out: The second number
+        :returns: The sum of two numbers
+        :rtype: str
     """
 
     data_cha = pd.DataFrame()
