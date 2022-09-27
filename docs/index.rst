@@ -5,6 +5,8 @@ Welcome to scikit-talk's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   modules
+   
    readme
    installation
    usage
