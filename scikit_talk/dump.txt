@@ -41,15 +41,3 @@ If the corpus provides timestamps, 'begin' and 'end' will contain these in a pan
 
 
 
-import os
-import csv
-import regex as re
-import numpy as np
-import pandas as pd
-import pylangacq
-from speach import elan
-import datetime
-
-# ----------------------------------------------------------------------
-# Preprocessor module for parsing Preprocessor module for parsing Preprocessor module for parsing
-# ----------------------------------------------------------------------

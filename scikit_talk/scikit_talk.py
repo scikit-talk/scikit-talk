@@ -1,3 +1,17 @@
+import os
+import csv
+import regex as re
+import numpy as np
+import pandas as pd
+import pylangacq
+from speach import elan
+import datetime
+
+# ----------------------------------------------------------------------
+# Preprocessor module for parsing Preprocessor module for parsing Preprocessor module for parsing
+# ----------------------------------------------------------------------
+
+
 def cha_to_dataframe(path_in, *path_out):
     """This method will be used to add two numbersss
         :param str path_in: The first number
