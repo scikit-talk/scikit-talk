@@ -1,3 +1,4 @@
+
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
@@ -17,12 +18,10 @@ sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Math'
-copyright = '2022, Chandler Bing'
-author = 'Chandler Bing'
-
-# The full version, including alpha/beta/rc tags
-release = '00.00.01'
+project = 'scikit-talk'
+copyright = '2022, Andreas Liesenfeld, Gabor Parti'
+author = 'Andreas Liesenfeld, Gabor Parti'
+release = '0.0.300'
 
 
 # -- General configuration ---------------------------------------------------

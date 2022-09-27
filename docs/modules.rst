@@ -1,7 +1,7 @@
-scikit_talk
-===========
+maths
+=====
 
 .. toctree::
    :maxdepth: 4
 
-   scikit_talk
+   maths
